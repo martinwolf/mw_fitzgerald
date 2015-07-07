@@ -94,7 +94,7 @@ gulp.task('files', function () {
  */
 gulp.task('browser-sync', function() {
     browserSync({
-        proxy: "the-writer.theme",
+        proxy: "fitzgerald.theme",
         xip: true
     });
 });

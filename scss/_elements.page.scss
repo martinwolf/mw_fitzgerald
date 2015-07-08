@@ -1,0 +1,19 @@
+/**
+ * Page
+ */
+
+html {
+    overflow-y: scroll;
+    min-height: 100%;
+    color: $color-text;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    background-color: $color-page;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &.wf-active {
+        font-family: $base-font-family-loaded;
+    }
+}

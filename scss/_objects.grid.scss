@@ -1,0 +1,28 @@
+/**
+ * Grid
+ * Based on csswizardry-grids
+ * http://csswizardry.com/csswizardry-grids/
+ * Will be extended over time, when needed in projects
+ */
+
+.o-grid {
+    margin: 0;
+    margin-left: -$grid-gap--small;
+    padding: 0;
+    list-style: none;
+
+    @include breakpoint(m-up) {
+        margin-left: -$grid-gap--medium;
+    }
+}
+
+    .o-grid__item {
+        display: inline-block;
+        padding-left: $grid-gap--small;
+        vertical-align: top;
+        width: 100%;
+
+        @include breakpoint(m-up) {
+                padding-left: $grid-gap--medium;
+        }
+    }

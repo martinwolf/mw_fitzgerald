@@ -1,0 +1,15 @@
+/**
+ * Wrappers
+ */
+
+.o-wrapper {
+    max-width: $width-wrap;
+    margin: 0 auto;
+    padding-right: $spacing-unit--small;
+    padding-left: $spacing-unit--small;
+
+    @include breakpoint(m-up) {
+        padding-right: $spacing-unit;
+        padding-left: $spacing-unit;
+    }
+}

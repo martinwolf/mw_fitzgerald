@@ -1,0 +1,41 @@
+/**
+ * Media Query Mixin
+ */
+
+@mixin breakpoint($bp) {
+    @if $bp == s {
+        @media #{$media-query--small} {
+            @content;
+        }
+    }
+    @if $bp == m {
+        @media #{$media-query--medium} {
+            @content;
+        }
+    }
+    @if $bp == l {
+        @media #{$media-query--large} {
+            @content;
+        }
+    }
+    @if $bp == m-up {
+        @media #{$media-query--medium-up} {
+            @content;
+        }
+    }
+    @if $bp == m-down {
+        @media #{$media-query--medium-down} {
+            @content;
+        }
+    }
+    @if $bp == wrap {
+        @media #{$media-query--wrap} {
+            @content;
+        }
+    }
+    @elseif $bp == retina {
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            @content;
+        }
+    }
+}

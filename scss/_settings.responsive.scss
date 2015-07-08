@@ -1,0 +1,10 @@
+/**
+ * Responsive
+ */
+
+$media-query--small: '(max-width: #{$breakpoint--small})';
+$media-query--medium: '(min-width: #{$breakpoint--medium}) and (max-width: #{$breakpoint--large - 1})';
+$media-query--large: '(min-width: #{$breakpoint--large})';
+$media-query--medium-up: '(min-width: #{$breakpoint--medium})';
+$media-query--medum-down: '(max-width: #{$breakpoint--large - 1})';
+$media-query--wrap: '(min-width: #{$width-wrap})';

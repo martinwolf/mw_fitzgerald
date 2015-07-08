@@ -1,0 +1,18 @@
+/**
+ * Headings
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $base-font-family-extra;
+    -webkit-font-feature-settings: "liga", "kern";
+    font-feature-settings: "liga", "kern";
+
+    .wf-active & {
+        font-family: $base-font-family-extra-loaded;
+    }
+}

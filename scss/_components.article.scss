@@ -1,0 +1,33 @@
+/**
+ * Article Component
+ */
+
+.c-article {
+    margin-bottom: 3*$spacing-unit--large;
+}
+
+    .c-article__category {
+        color: $color-gray;
+        font-size: 13px;
+
+        a {
+            color: inherit;
+        }
+    }
+
+    .c-article__title {
+        margin-bottom: $spacing-unit;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+
+        @include breakpoint(m-up) {
+            margin-bottom: 2*$spacing-unit;
+            font-size: 60px;
+        }
+
+        a {
+            color: inherit;
+        }
+    }

@@ -4,5 +4,10 @@
 
 ul,
 ol {
-    margin-left: $spacing-unit;
+    //margin-left: $spacing-unit;
+
+    ul,
+    ol {
+        margin-left: $spacing-unit--small;
+    }
 }

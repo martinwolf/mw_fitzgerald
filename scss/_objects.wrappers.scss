@@ -5,11 +5,11 @@
 .o-wrapper {
     max-width: $width-wrap;
     margin: 0 auto;
-    padding-right: $spacing-unit--small;
-    padding-left: $spacing-unit--small;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
 
-    @include breakpoint(m-up) {
+    /*@include breakpoint(m-up) {
         padding-right: $spacing-unit;
         padding-left: $spacing-unit;
-    }
+    }*/
 }

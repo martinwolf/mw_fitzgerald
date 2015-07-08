@@ -19,11 +19,6 @@
     </header>
 
     <div class="c-text">
-        <?php
-            the_content( sprintf(
-                __( 'Continue reading %s' ),
-                the_title()
-            ) );
-        ?>
+        <?php the_content( sprintf(__( 'Continue reading...' )) ); ?>
     </div>
 </article>

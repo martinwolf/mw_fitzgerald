@@ -11,6 +11,18 @@ if ( ! function_exists( 'fitzgerald_setup' ) ) :
  */
 function fitzgerald_setup() {
     /**
+     * Remove p tags from img, noscript, video and iframes elements
+     */
+    function filter_ptags_on_images($content){
+        return preg_replace(
+            '/<p>\s*(<(?:img|noscript|video|iframe).*>)\s*<\/p>/iU',
+            '$1',
+            $content
+        );
+    }
+    add_filter('the_content', 'filter_ptags_on_images');
+
+    /**
      * Add default posts and comments RSS feed links to head
      */
     add_theme_support( 'automatic-feed-links' );

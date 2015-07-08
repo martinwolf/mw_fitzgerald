@@ -3,39 +3,43 @@
  */
 
 .c-text {
-    max-width: 700px;
-    font-size: 16px;
-    line-height: 1.5;
-
-    @include breakpoint(m-up) {
-        font-size: 18px;
-        line-height: 1.6;
-    }
+    font-size: $base-font-size;
+    line-height: $base-line-height;
 
     p,
     ul,
     ol,
+    blockquote,
+    pre,
     img {
         margin-bottom: $spacing-unit;
     }
 
+    img,
+    figure {
+        max-width: 100%;
+        height: auto;
+    }
+
     h2 {
-        font-size: 22px;
-        font-weight: 400;
     }
 
     h3 {
-        font-size: 20px;
-        font-weight: 400;
     }
 
     h3 {
-        font-size: 18px;
-        font-weight: 400;
     }
 
     h4 {
-        font-size: 16px;
-        font-weight: 400;
+    }
+
+    h5 {
+    }
+
+    h6 {
+    }
+
+    pre {
+        overflow: scroll;
     }
 }

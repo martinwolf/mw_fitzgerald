@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class('c-article'); ?>>
+<article class="o-wrapper c-article">
     <header class="c-article__header">
         <p class="c-article__category">
             <?php
@@ -18,7 +18,7 @@
         ?>
     </header>
 
-    <div class="c-txt">
+    <div class="c-text">
         <?php
             the_content( sprintf(
                 __( 'Continue reading %s' ),

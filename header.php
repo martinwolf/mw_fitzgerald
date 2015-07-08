@@ -31,5 +31,5 @@
 
 <body <?php body_class(); ?>>
 
-<header class="c-site-header">
+<header class="o-wrapper c-site-header">
 </header>

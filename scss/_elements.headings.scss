@@ -12,6 +12,9 @@ h6 {
     -webkit-font-feature-settings: "liga", "kern";
     font-feature-settings: "liga", "kern";
 
+    word-wrap: break-word;
+    hyphens: auto;
+
     .wf-active & {
         font-family: $base-font-family-extra-loaded;
     }

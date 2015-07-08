@@ -7,7 +7,7 @@ html {
     min-height: 100%;
     color: $color-text;
     font-family: $base-font-family;
-    font-size: $base-font-size;
+    font-size: 18px;
     line-height: $base-line-height;
     background-color: $color-page;
     -webkit-font-smoothing: antialiased;
@@ -15,5 +15,9 @@ html {
 
     &.wf-active {
         font-family: $base-font-family-loaded;
+    }
+
+    @include breakpoint(m-up) {
+        font-size: 20px;
     }
 }

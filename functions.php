@@ -44,6 +44,11 @@ function fitzgerald_setup() {
     add_theme_support( 'html5', array(
         'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
     ) );
+
+    /**
+     * Add Image Sizes
+     */
+    add_image_size( 'fitzgerald_featured-img', 640);
 }
 endif;
 add_action( 'after_setup_theme', 'fitzgerald_setup' );

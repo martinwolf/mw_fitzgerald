@@ -1,0 +1,38 @@
+/**
+ * Site Title and Description
+ */
+
+.c-site-title {
+    font-family: $base-font-family;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 1.2;
+
+    &::before {
+        content: '';
+        display: block;
+        margin-bottom: 20px;
+        width: 20px;
+        height: 1px;
+        background: #000;
+
+        @include breakpoint(m-up) {
+            width: 40px;
+        }
+    }
+
+    @include breakpoint(m-up) {
+        font-size: 60px;
+    }
+
+    .wf-active & {
+        font-family: $base-font-family-loaded;
+    }
+}
+
+    .c-site-title__link {
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
+

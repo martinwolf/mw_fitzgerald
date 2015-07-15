@@ -1,0 +1,27 @@
+/**
+ * Footer
+ */
+
+.c-site-footer {
+    padding-top: $spacing-unit--large;
+    padding-bottom: $spacing-unit--large;
+    font-size: 16px;
+    border-top: 1px solid $color-gray-light;
+}
+
+    .c-site-footer__headline {
+        font-size: 26px;
+
+    }
+
+    .c-site-footer__list {
+        list-style: none;
+
+        .children {
+            margin-left: $spacing-unit;
+        }
+    }
+
+    .c-site-footer__module {
+        margin-bottom: $spacing-unit--large;
+    }

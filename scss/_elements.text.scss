@@ -18,16 +18,20 @@
 
     > p:first-child::first-letter {
         float: left;
-        padding-top: 7px;
+        padding-top: 9px;
         padding-right: 10px;
         font-size: 59px;
         font-weight: 700;
-        line-height: 1;
+        line-height: 0.8;
 
         @include breakpoint(m-up) {
-            padding-top: 8px;
-            font-size: 66px;
+            padding-top: 11px;
+            font-size: 65px;
         }
+    }
+
+    a {
+        font-weight: bold;
     }
 
     img {
@@ -38,6 +42,10 @@
     figure {
         width: 100%;
         max-width: 100%;
+
+        img {
+            margin-bottom: $spacing-unit--small;
+        }
     }
 
     h1 {
@@ -46,7 +54,6 @@
         font-size: 34px;
         font-weight: 700;
         line-height: 1.2;
-        letter-spacing: -0.01em;
 
         @include breakpoint(m-up) {
             font-size: 36px;
@@ -59,7 +66,6 @@
         font-size: 32px;
         font-weight: 700;
         line-height: 1.2;
-        letter-spacing: -0.01em;
 
         @include breakpoint(m-up) {
             font-size: 34px;
@@ -72,7 +78,6 @@
         font-size: 26px;
         font-weight: 700;
         line-height: 1.2;
-        letter-spacing: -0.01em;
 
         @include breakpoint(m-up) {
             font-size: 28px;
@@ -89,6 +94,10 @@
     }
 
     h6 {
+    }
+
+    ul, ol {
+        margin-left: $spacing-unit;
     }
 
     pre {

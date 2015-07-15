@@ -1,0 +1,137 @@
+/**
+ * Comments
+ */
+
+.c-comments {
+    margin-bottom: 2*$spacing-unit--large;
+    font-size: 16px;
+
+    @include breakpoint(m-up) {
+        margin-bottom: 3*$spacing-unit--large;
+    }
+}
+
+    .c-comments__title {
+        margin-bottom: $spacing-unit--small;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.2;
+
+        @include breakpoint(m-up) {
+            margin-bottom: $spacing-unit;
+        }
+    }
+
+    .c-comments__list {
+        list-style: none;
+        margin-bottom: $spacing-unit--large;
+
+        @include breakpoint(m-up) {
+            margin-bottom: 2*$spacing-unit--large;
+        }
+
+        .children {
+            margin-top: $spacing-unit;
+            margin-bottom: $spacing-unit;
+            list-style: inherit;
+        }
+    }
+
+.comment {
+    margin-bottom: $spacing-unit;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.comment-author {
+    line-height: 1.2;
+}
+
+.comment-metadata {
+    margin-bottom: 2px;
+    font-size: 12px;
+
+    a {
+        color: $color-text;
+    }
+}
+
+.comment-reply-link {
+    font-size: 12px;
+}
+
+
+.comment-reply-title {
+    margin-bottom: $spacing-unit--small;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    @include breakpoint(m-up) {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.comment-form {
+    label {
+        display: block;
+    }
+
+    input,
+    textarea {
+        display: block;
+        width: 100%;
+        padding: 7px;
+        border: 1px solid $color-gray-light;
+        font-family: $base-font-family;
+        font-size: 16px;
+
+        .wf-active {
+            font-family: $base-font-family-loaded;
+        }
+    }
+
+    textarea {
+        max-width: 100%;
+    }
+}
+
+.comment-notes {
+    font-size: 14px;
+}
+
+.comment-notes,
+.comment-form-author,
+.comment-form-email,
+.comment-form-url,
+.comment-form-comment,
+.form-allowed-tags {
+    margin-bottom: $spacing-unit--small;
+}
+
+.comment-form-comment {
+}
+
+.form-allowed-tags {
+    display: none;
+    font-size: 14px;
+}
+
+.submit {
+    color: $color-page;
+    background-color: $color-button;
+
+    &:hover, &:focus {
+        background-color: $color-button-hover;
+    }
+}
+
+.submit.submit {
+    border: 0;
+
+    @include breakpoint(m-up) {
+        padding: $spacing-unit--small;
+    }
+}

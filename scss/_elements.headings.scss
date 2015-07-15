@@ -8,12 +8,16 @@ h3,
 h4,
 h5,
 h6 {
+    color: #000;
+
     font-family: $base-font-family-extra;
     -webkit-font-feature-settings: "liga", "kern";
     font-feature-settings: "liga", "kern";
 
     word-wrap: break-word;
     hyphens: auto;
+
+    letter-spacing: -0.01em;
 
     .wf-active & {
         font-family: $base-font-family-extra-loaded;

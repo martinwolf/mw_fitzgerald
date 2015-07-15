@@ -1,11 +1,24 @@
-<article class="o-wrapper c-article">
-    <header class="c-article__header">
+<article class="c-article">
+    <?php
+    if ( is_single() && has_post_thumbnail() ) {
+        $imageOptions = array(
+            'class' => 'c-article__featured-img'
+        );
+        the_post_thumbnail('fitzgerald_featured-img', $imageOptions);
+    }
+    ?>
+
+    <header class="o-wrapper">
         <p class="c-article__category">
             <?php
             echo sprintf(
                 __( 'Published in  %s' ),
                 get_the_category_list( __( ', ' ) )
             );
+            ?>
+            |
+            <?php
+                the_date();
             ?>
         </p>
 
@@ -18,7 +31,7 @@
         ?>
     </header>
 
-    <div class="c-text">
+    <div class="o-wrapper c-text">
         <?php the_content( sprintf(__( 'Continue reading...' )) ); ?>
     </div>
 </article>

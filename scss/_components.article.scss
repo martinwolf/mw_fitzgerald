@@ -21,6 +21,12 @@
             margin-top: 3*$spacing-unit--large;
         }
     }
+
+    &:last-child {
+        &::after {
+            display: none;
+        }
+    }
 }
 
     .c-article__featured-img {
@@ -35,7 +41,7 @@
         }
     }
 
-    .c-article__category {
+    .c-article__meta {
         color: $color-gray;
         font-size: 14px;
 

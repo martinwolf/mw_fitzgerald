@@ -20,6 +20,7 @@
         float: left;
         padding-top: 9px;
         padding-right: 10px;
+        color: $color-black;
         font-size: 59px;
         font-weight: 700;
         line-height: 0.8;
@@ -32,6 +33,12 @@
 
     a {
         font-weight: bold;
+        border-bottom: 2px solid $color-brand;
+
+        &:hover, &:focus {
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+        }
     }
 
     img {
@@ -107,7 +114,7 @@
     blockquote {
         padding-left: $spacing-unit--small;
         font-style: italic;
-        border-left: 4px solid $color-gray-light;
+        border-left: 4px solid $color-brand;
 
         @include breakpoint(m-up) {
             padding-left: $spacing-unit;

@@ -23,16 +23,18 @@
     text-align: center;
 }
 
-.more-link {
+.more-link.more-link {
     display: inline-block;
     padding: $spacing-unit--small+2px $spacing-unit $spacing-unit--small;
     color: $color-page;
     line-height: 1;
     background-color: $color-button;
+    border: 0;
 
     &:hover,
     &:focus {
         text-decoration: none;
         background-color: $color-button-hover;
+        border: 0;
     }
 }

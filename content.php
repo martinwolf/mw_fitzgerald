@@ -9,7 +9,7 @@
     ?>
 
     <header class="o-wrapper">
-        <p class="c-article__category">
+        <p class="c-article__meta">
             <?php
             echo sprintf(
                 __( 'Published in  %s' ),
@@ -18,7 +18,7 @@
             ?>
             |
             <?php
-                the_date();
+                the_time('F j, Y');
             ?>
         </p>
 

@@ -1,0 +1,16 @@
+/**
+ * Pagination
+ */
+
+.c-pagination {
+    margin-bottom: 2*$spacing-unit--large;
+    text-align: center;
+
+    @include breakpoint(m-up) {
+        margin-bottom: 3*$spacing-unit--large;
+    }
+
+    a {
+        display: inline-block;
+    }
+}

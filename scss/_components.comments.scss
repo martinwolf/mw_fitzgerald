@@ -88,7 +88,7 @@
         font-family: $base-font-family;
         font-size: 16px;
 
-        .wf-active {
+        .wf-active & {
             font-family: $base-font-family-loaded;
         }
     }

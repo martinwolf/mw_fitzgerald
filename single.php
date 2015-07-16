@@ -19,7 +19,6 @@ endwhile;
         <?php previous_post_link('%link', 'Previous Article'); ?>
     </span>
     <span class="c-article-nav__item c-article-nav__item--next">
-
         <?php next_post_link('%link', 'Next Article'); ?>
     </span>
 </nav>

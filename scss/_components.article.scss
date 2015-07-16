@@ -13,7 +13,8 @@
         content: '~';
         display: block;
         margin-top: 2*$spacing-unit--large;
-        font-size: 40px;
+        color: $color-brand;
+        font-size: 60px;
         line-height: 1;
         text-align: center;
 
@@ -58,7 +59,7 @@
         letter-spacing: -0.02em;
 
         @include breakpoint(m-up) {
-            margin-bottom: 2*$spacing-unit;
+            margin-bottom: 1.5*$spacing-unit;
             font-size: 60px;
         }
 

@@ -103,4 +103,14 @@
     pre {
         overflow: scroll;
     }
+
+    blockquote {
+        padding-left: $spacing-unit--small;
+        font-style: italic;
+        border-left: 4px solid $color-gray-light;
+
+        @include breakpoint(m-up) {
+            padding-left: $spacing-unit;
+        }
+    }
 }

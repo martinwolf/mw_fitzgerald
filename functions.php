@@ -57,7 +57,17 @@ function fitzgerald_setup() {
      */
     add_image_size( 'fitzgerald_content-img', 580);
     add_image_size( 'fitzgerald_featured-img', 640);
-    add_image_size( 'fitzgerald_featured-img_2x', 1280);
+
+    /**
+     * Add Image Sizes to Add Media Dialog
+     */
+    add_filter( 'image_size_names_choose', 'fitzgerald_image_sizes' );
+
+    function fitzgerald_image_sizes( $sizes ) {
+        return array_merge( $sizes, array(
+            'fitzgerald_content-img' => __('Content Image'),
+        ) );
+    }
 }
 endif;
 add_action( 'after_setup_theme', 'fitzgerald_setup' );

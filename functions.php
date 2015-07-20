@@ -38,17 +38,26 @@ function fitzgerald_setup() {
     add_theme_support( 'post-thumbnails' );
 
     /**
-     * Switch default core markup for search form, comment form, and comments
-     * to output valid HTML5
+     * Switch default core markup for search form, comment form, comments,
+     * gallery and captions to output valid HTML5
      */
     add_theme_support( 'html5', array(
         'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
     ) );
 
     /**
+     * Add Content Width Variable
+     */
+    if ( !isset( $content_width ) ) {
+        $content_width = 580;
+    }
+
+    /**
      * Add Image Sizes
      */
+    add_image_size( 'fitzgerald_content-img', 580);
     add_image_size( 'fitzgerald_featured-img', 640);
+    add_image_size( 'fitzgerald_featured-img_2x', 1280);
 }
 endif;
 add_action( 'after_setup_theme', 'fitzgerald_setup' );

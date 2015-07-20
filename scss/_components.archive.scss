@@ -1,0 +1,14 @@
+/**
+ * Archive
+ */
+
+.c-archive__title {
+    margin-bottom: $spacing-unit;
+    font-size: 40px;
+    line-height: 1.2;
+
+    @include breakpoint(m-up) {
+        margin-bottom: $spacing-unit--large;
+        font-size: 60px;
+    }
+}

@@ -23,5 +23,9 @@
     }
 
     .c-site-footer__module {
-        margin-bottom: $spacing-unit--large;
+        margin-bottom: 2*$spacing-unit;
+
+        @include breakpoint(m-up) {
+            margin-bottom: 3*$spacing-unit;
+        }
     }

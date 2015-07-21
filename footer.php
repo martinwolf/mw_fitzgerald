@@ -1,4 +1,15 @@
 <footer class="o-wrapper c-site-footer">
+    <?php if (get_theme_mod( 'about_img', 'default_value' ) && get_theme_mod( 'about_text', 'default_value' )) { ?>
+    <div class="o-media c-about-box c-site-footer__module">
+        <div class="o-media__img">
+            <img class="c-about-box__img" src="<?php echo get_theme_mod( 'about_img', 'default_value' ); ?>" alt="<?php bloginfo('author'); ?>">
+        </div>
+        <div class="o-media__body">
+            <p><?php echo get_theme_mod( 'about_text', 'default_value' ); ?></p>
+        </div>
+    </div>
+    <?php } ?>
+
     <div class="o-grid">
         <div class="o-grid__item w-1-2--m w-1-2--l">
             <div class="c-site-footer__module">

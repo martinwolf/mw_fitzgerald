@@ -68,20 +68,76 @@ function fitzgerald_setup() {
             'fitzgerald_content-img' => __('Content Image'),
         ) );
     }
+
+    /**
+    * Theme Customize Options
+    */
+    function fitzgerald_customize_register( $wp_customize ) {
+        /**
+         * Textarea Customize Module
+         */
+        class fitzgerald_Customize_Textarea_Control extends WP_Customize_Control {
+            public $type = 'textarea';
+            public function render_content() { ?>
+                <label>
+                    <span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
+                    <textarea rows="5" style="width:100%;" <?php $this->link(); ?>><?php echo esc_textarea( $this->value() ); ?></textarea>
+                </label>
+            <?php }
+        }
+
+        /**
+         * About Image
+         */
+        $wp_customize->add_setting('about_img');
+        $wp_customize->add_control(
+            new WP_Customize_Image_Control(
+                $wp_customize,
+                'about_img',
+                array(
+                    'label' => 'About Image',
+                    'description' => 'Upload a square image with 100x100px',
+                    'section' => 'about_box',
+                    'settings' => 'about_img'
+                )
+            )
+        );
+
+        /**
+         * About Text
+         */
+        $wp_customize->add_setting('about_text', array('default' => '',));
+        $wp_customize->add_control(
+            new fitzgerald_Customize_Textarea_Control(
+                $wp_customize,
+                'about_text',
+                array(
+                    'label' => 'About Text',
+                    'section' => 'about_box',
+                    'settings' => 'about_text',
+                )
+            )
+        );
+
+        $wp_customize->add_section('about_box' , array(
+            'title' => __('About Box','fitzgerald'),
+        ));
+    }
+    add_action( 'customize_register', 'fitzgerald_customize_register' );
 }
 endif;
 add_action( 'after_setup_theme', 'fitzgerald_setup' );
 
 
 /**
- * Enqueue scripts and styles.
+ * Enqueue scripts and styles
  */
-function fitzgerald_scripts() {
+function fitzgerald_assets() {
     /**
      * Load main stylesheet
      */
     wp_enqueue_style( 'fitzgerald-style', get_template_directory_uri() . '/dist/css/style.min.css' );
 }
-add_action( 'wp_enqueue_scripts', 'fitzgerald_scripts' );
+add_action( 'wp_enqueue_scripts', 'fitzgerald_assets' );
 
 ?>

@@ -8,7 +8,7 @@
     line-height: 1.2;
 
     @include breakpoint(m-up) {
-        margin-bottom: $spacing-unit--large;
+        margin-bottom: 3*$spacing-unit;
         font-size: 60px;
     }
 }

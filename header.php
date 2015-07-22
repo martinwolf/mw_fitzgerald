@@ -30,6 +30,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<span class="c-top-bar"></span>
 
 <header class="o-wrapper c-site-header">
     <?php if ( is_front_page() && is_home() ) : ?>

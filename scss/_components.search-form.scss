@@ -34,7 +34,11 @@
     color: $color-page;
     padding: 5px;
     background-color: $color-button;
-    border: 0;
+    border: 1px solid transparent;
+
+    &::-moz-focus-inner {
+        border: 0;
+    }
 
     &:hover, &:focus {
         background-color: $color-button-hover;

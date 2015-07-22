@@ -21,21 +21,3 @@ html {
         font-size: 20px;
     }
 }
-
-body {
-    &::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        width: 100%;
-        background-color: $color-brand;
-        will-change: transform;
-    }
-
-    &.logged-in::before {
-        top: 32px;
-    }
-}

@@ -111,9 +111,6 @@
     margin-bottom: $spacing-unit--small;
 }
 
-.comment-form-comment {
-}
-
 .form-allowed-tags {
     display: none;
     font-size: 14px;
@@ -129,6 +126,7 @@
 }
 
 .submit.submit {
+    padding: 5px;
     border: 0;
 
     @include breakpoint(m-up) {

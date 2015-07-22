@@ -10,6 +10,11 @@
     </div>
     <?php } ?>
 
+    <div class="c-site-footer__module">
+        <h3 class="c-site-footer__headline">Search the blog</h3>
+        <?php get_search_form(); ?>
+    </div>
+
     <div class="o-grid">
         <div class="o-grid__item w-1-2--m w-1-2--l">
             <div class="c-site-footer__module">

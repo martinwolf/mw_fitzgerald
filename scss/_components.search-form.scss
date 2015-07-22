@@ -1,0 +1,49 @@
+/**
+ * Searchform
+ */
+
+.search-form {
+    @extend %clearfix;
+}
+
+.search-field,
+.search-submit {
+    display: inline-block;
+    font-family: $base-font-family;
+    font-size: 16px;
+
+    .wf-active & {
+        font-family: $base-font-family-loaded;
+    }
+}
+
+.search-field {
+    padding: 7px;
+    margin-bottom: $spacing-unit--small;
+    width: 100%;
+    border: 1px solid $color-gray-light;
+
+    @include breakpoint(m-up) {
+        display: block;
+        float: left;
+        width: 80%;
+    }
+}
+
+.search-submit {
+    color: $color-page;
+    padding: 5px;
+    background-color: $color-button;
+    border: 0;
+
+    &:hover, &:focus {
+        background-color: $color-button-hover;
+    }
+
+    @include breakpoint(m-up) {
+        display: block;
+        padding: 7px;
+        float: right;
+        width: 19%;
+    }
+}

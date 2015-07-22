@@ -1,21 +1,21 @@
 <?php get_header(); ?>
 
 <main>
-<?php
-if ( have_posts() ) :
+    <?php
+    if ( have_posts() ) :
 
-    the_archive_title( '<h1 class="o-wrapper c-archive__title">', '</h1>' );
+        the_archive_title( '<h1 class="o-wrapper c-archive__title">', '</h1>' );
 
-    while ( have_posts() ) : the_post();
-        get_template_part( 'content', get_post_format() );
-    endwhile;
+        while ( have_posts() ) : the_post();
+            get_template_part( 'content', get_post_format() );
+        endwhile;
 
-else:
+    else:
 
-    get_template_part( 'content', 'none' );
+        get_template_part( 'content', 'none' );
 
-endif;
-?>
+    endif;
+    ?>
 </main>
 
 <?php get_footer(); ?>

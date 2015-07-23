@@ -67,3 +67,11 @@
             color: inherit;
         }
     }
+
+    .c-article__footer {
+        margin-top: $spacing-unit--large;
+
+        @include breakpoint(m-up) {
+            margin-top: 2*$spacing-unit;
+        }
+    }

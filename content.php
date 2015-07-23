@@ -34,4 +34,17 @@
     <div class="o-wrapper c-text">
         <?php the_content( sprintf(__( 'Continue reading...' )) ); ?>
     </div>
+
+    <?php if ( has_tag() ) { ?>
+    <footer class="o-wrapper c-article__footer">
+        <p class="c-article__meta">
+            <?php
+            echo sprintf(
+                __( 'Tagged with %s.' ),
+                get_the_tag_list('',', ','')
+            );
+            ?>
+        </p>
+    </footer>
+    <?php } ?>
 </article>

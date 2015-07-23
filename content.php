@@ -35,7 +35,7 @@
         <?php the_content( sprintf(__( 'Continue reading...' )) ); ?>
     </div>
 
-    <?php if ( has_tag() ) { ?>
+    <?php if ( is_single() && has_tag() ) { ?>
     <footer class="o-wrapper c-article__footer">
         <p class="c-article__meta">
             <?php

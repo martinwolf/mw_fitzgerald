@@ -18,7 +18,7 @@
             ?>
             |
             <?php
-                the_time('F j, Y');
+                echo date_i18n( get_option( 'date_format' ), strtotime( get_the_time() ) );
             ?>
         </p>
 

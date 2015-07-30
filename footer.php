@@ -11,14 +11,18 @@
     <?php } ?>
 
     <div class="c-site-footer__module">
-        <h3 class="c-site-footer__headline">Search the blog</h3>
+        <h3 class="c-site-footer__headline">
+            <?php _e( 'Search the blog', 'mw_fitzgerald' ); ?>
+        </h3>
         <?php get_search_form(); ?>
     </div>
 
     <div class="o-grid">
         <div class="o-grid__item w-1-2--m w-1-2--l">
             <div class="c-site-footer__module">
-                <h3 class="c-site-footer__headline">Pages</h3>
+                <h3 class="c-site-footer__headline">
+                    <?php _e( 'Pages', 'mw_fitzgerald' ); ?>
+                </h3>
                 <ul class="c-site-footer__list">
                     <?php wp_list_pages('title_li='); ?>
                 </ul>
@@ -27,7 +31,10 @@
 
      --><div class="o-grid__item w-1-2--m w-1-2--l">
             <div class="c-site-footer__module">
-                <h3 class="c-site-footer__headline">Categories</h3> <ul class="c-site-footer__list">
+                <h3 class="c-site-footer__headline">
+                    <?php _e( 'Categories', 'mw_fitzgerald' ); ?>
+                </h3>
+                <ul class="c-site-footer__list">
                     <?php wp_list_categories('title_li='); ?>
                 </ul>
             </div>

@@ -17,7 +17,7 @@
 </main>
 
 <div class="o-wrapper c-pagination">
-    <?php posts_nav_link('&nbsp; | &nbsp;','Previous Page','Next Page'); ?>
+    <?php posts_nav_link('&nbsp; | &nbsp;', __( 'Previous Page', 'mw_fitzgerald' ), __( 'Next Page', 'mw_fitzgerald' )); ?>
 </div>
 
 <?php get_footer(); ?>

@@ -12,7 +12,7 @@
         <p class="c-article__meta">
             <?php
             echo sprintf(
-                __( 'Published in  %s' ),
+                __( 'Published in  %s', 'mw_fitzgerald' ),
                 get_the_category_list( __( ', ' ) )
             );
             ?>
@@ -32,7 +32,7 @@
     </header>
 
     <div class="o-wrapper c-text">
-        <?php the_content( sprintf(__( 'Continue reading...' )) ); ?>
+        <?php the_content( sprintf(__( 'Continue reading...', 'mw_fitzgerald' )) ); ?>
     </div>
 
     <?php if ( is_single() && has_tag() ) { ?>
@@ -40,7 +40,7 @@
         <p class="c-article__meta">
             <?php
             echo sprintf(
-                __( 'Tagged with %s.' ),
+                __( 'Tagged with %s.', 'mw_fitzgerald' ),
                 get_the_tag_list('',', ','')
             );
             ?>

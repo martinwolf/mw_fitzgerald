@@ -11,6 +11,11 @@ if ( ! function_exists( 'fitzgerald_setup' ) ) :
  */
 function fitzgerald_setup() {
     /**
+     * Make theme available for translation.
+     */
+    load_theme_textdomain( 'mw_fitzgerald', get_template_directory() . '/languages' );
+
+    /**
      * Remove p tags from img, noscript, video and iframes elements
      */
     function filter_ptags_on_images($content){

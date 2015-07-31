@@ -1,0 +1,111 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fitzgerald\n"
+"POT-Creation-Date: 2015-07-31 11:52+0200\n"
+"PO-Revision-Date: 2015-07-31 11:52+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x;_ex;_nx;_n_noop;_nx_noop\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+
+#: 404.php:6
+msgid "Error 404 - Page not found"
+msgstr "Fehler 404 - Seite nicht gefunden"
+
+#: 404.php:11
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+"Leider kann Dir an dieser Stelle nichts angezeigt werden. Probier’s mal mit "
+"der Suche!"
+
+#: comments.php:18
+msgid "One Comment"
+msgstr "Ein Kommentar"
+
+#: comments.php:38
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen."
+
+#: content-none.php:4
+msgid "Nothing Found"
+msgstr "Nichts gefunden"
+
+#: content-none.php:11
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Die Suche ergab leider kein Ergebnis. Bitte versuche es mit einem anderen "
+"Suchbegriff."
+
+#: content-none.php:16
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Es scheint, dass wir nicht finden konnten, wonach Sie schauen. Vielleicht "
+"hilft eine Suche."
+
+#: content.php:15
+#, php-format
+msgid "Published in  %s"
+msgstr "Veröffentlicht in %s"
+
+#: content.php:35
+msgid "Continue reading..."
+msgstr "Weiterlesen…."
+
+#: content.php:43
+#, php-format
+msgid "Tagged with %s."
+msgstr "Verschlagwortet mit %s."
+
+#: footer.php:15
+msgid "Search the blog"
+msgstr "Den Blog durchsuchen"
+
+#: footer.php:24
+msgid "Pages"
+msgstr "Seiten"
+
+#: footer.php:35
+msgid "Categories"
+msgstr "Kategorien"
+
+#: functions.php:73
+msgid "Content Image"
+msgstr "Content Bild"
+
+#: functions.php:128
+msgid "About Box"
+msgstr "Über mich Box"
+
+#: index.php:20 search.php:24
+msgid "Previous Page"
+msgstr "Vorherige Seite"
+
+#: index.php:20 search.php:24
+msgid "Next Page"
+msgstr "Nächste Seite"
+
+#: search.php:8
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Suchergebnisse für: %s"
+
+#: single.php:19
+msgid "Previous Article"
+msgstr "Vorheriger Artikel"
+
+#: single.php:22
+msgid "Next Article"
+msgstr "Nächster Artikel"

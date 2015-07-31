@@ -13,7 +13,7 @@
             <?php
             echo sprintf(
                 __( 'Published in  %s', 'mw_fitzgerald' ),
-                get_the_category_list( __( ', ' ) )
+                get_the_category_list( ', ' )
             );
             ?>
             |
